@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Expression Character App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        main {
+            text-align: center;
+        }
+        #status {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        canvas {
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="status">Loading face detection models...</div>
+        <!-- p5.js canvas will be created here -->
+    </main>
+
+    <!-- Library CDN Links -->
+    <!-- p5.js - for canvas and drawing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+
+    <!-- ml5.js - easier face detection library (works with p5.js) -->
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+
+    <!-- anime.js - for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Our main sketch file -->
+    <script src="sketch.js"></script>
+</body>
+</html>
